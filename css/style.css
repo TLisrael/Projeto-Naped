@@ -1,53 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 * {
+ font-family: 'Rubik', sans-serif;
+ color: #ffffff;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
 
-	font-family: 'Rubik', sans-serif;
- color: #FFFFFF;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 .menu {
-	position: absolute;
-	width: 1920px;
-	height: 80px;
-	background: #06090f;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+ position: absolute;
+ width: 1920px;
+ height: 80px;
+ background: #06090f;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
+
 .menu ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
+ display: flex;
+ justify-content: center;
+ list-style: none;
  margin-left: 345px;
 }
-.menu li{
+
+.menu li {
  margin: 30px;
 }
-.menu li a{
+
+.menu li a {
  text-decoration: none;
 }
+
 .menu img {
-	position: absolute;
-	width: 40px;
-	height: 45.71px;
-	left: 352px;
-	top: 17px;
-}
-.menu > #logo_title {
  position: absolute;
-	width: 40px;
-	height: 45.71px;
+ width: 40px;
+ height: 45.71px;
+ left: 352px;
+ top: 17px;
+}
+
+.menu>#logo_title {
+ position: absolute;
+ width: 40px;
+ height: 45.71px;
  left: 412px;
-	top: 17px;
+ top: 17px;
  font-weight: 400;
  font-size: 32px;
- color:  #00a3ff ;
+ color: #00a3ff;
 }
-#nav_button{
- background: linear-gradient(223.75deg, #00A3FF 4.8%, #0054C6 95.02%);
+
+#nav_button {
+ background: linear-gradient(223.75deg, #00a3ff 4.8%, #0054c6 95.02%);
  padding: 14px 32px;
  border-radius: 5px;
+}
+
+main {
+ background: #151b26;
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+}
+
+/*.cadastro {
+	width: 600px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}*/
+#titulo_page {
+ position: absolute;
+ width: 80px;
+ height: 28px;
+ left: calc(50% - 80px / 2);
+ top: calc(57% - 28px / 2 - 306px);
+ color: #00a3ff;
+ font-family: 'Rubik';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 24px;
+ line-height: 28px;
+ text-transform: uppercase;
+}
+
+main h1 {
+ position: absolute;
+ width: 356px;
+ height: 67px;
+ left: 782px;
+ top: 280px;
+
+ font-family: 'Rubik';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 48px;
+ line-height: 140%;
+ /* or 67px */
+
+ text-align: center;
+}
+
+.cadastro {
+ display: flex;
+ align-items: center;
+ margin: 0 auto;
+}
+
+form {
+ margin-top: 200px;
+}
+
+input {
+ display: inline;
+ margin-top: 10px;
+ width: 448px;
+ height: 59px;
+ outline: none;
+ background: #090e18;
+ border: 1px solid #151b26;
+ border-radius: 4px;
+ text-align: center;
+ font-family: 'Rubik';
+ color: #ffffff;
+}
+
+input::placeholder {
+ color: #ffffff;
+ font-family: 'Rubik';
+ font-size: 18px;
+}
+
+button {
+ margin-top: 10px;
+ align-items: center;
+ width: 448px;
+ height: 59px;
+ background: linear-gradient(223.75deg, #00a3ff 4.8%, #0054c6 95.02%);
+ border-radius: 4px;
+ border: none;
+}
+
+.button-logar {
+ color: #0054c6;
+ margin-top: 100px;
+ text-decoration: none;
+ text-align: center;
 }
